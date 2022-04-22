@@ -1,0 +1,216 @@
+html{
+    font-size: 8px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../img/bg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    
+}
+body > image{
+    opacity: 0.3;
+}
+/* HEADER */
+header{
+    /* border: 2px solid red; */
+    background: linear-gradient(rgba(159, 117, 238, 0.5),rgb(241, 143, 209));
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    font-size: 3rem;
+    color: darkred;
+    font-family: cursive;
+    padding-right: 3rem;
+}
+@media (max-width: 340px){
+    h1{
+        font-size: 1.5rem;
+        text-align: center;
+        
+    }
+}
+
+@media (min-width:340px) and (max-width: 499px){
+    h1{
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+}
+@media (min-width:500px) and (max-width: 659px){
+    h1{
+        font-size: 2rem;
+        padding-right: 1rem;
+    }
+}
+@media (min-width:660px) and (max-width: 760px) {
+    h1{
+        font-size: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+#navbar ul li{
+    display: inline-block;
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding: 0rem 3rem;
+    color:#4bd6d6;
+    font-family: fantasy;
+}
+@media (max-width: 340px){
+    #navbar ul li a{
+        font-size: 0.9rem;
+        padding: 0rem 0.5rem;
+        text-align: center;
+        
+    }
+}
+@media (min-width:340px) and (max-width: 499px){
+    #navbar ul li a{
+        font-size: 1rem;
+        padding: 0rem 0.8rem;
+        
+    }
+}
+@media (min-width:500px) and (max-width: 659px){
+    #navbar ul li a{
+        font-size: 1.5rem;
+        padding:0rem 1rem ;
+    }
+}
+@media (min-width:660px) and (max-width: 760px){
+    #navbar ul li a{
+        font-size: 1.8rem;
+    }
+}
+
+#navbar ul li a:hover{
+    color: rgb(151, 26, 51);
+}
+
+/* CONTAINER */
+#container{
+    position: absolute;
+    top: 24%;
+    left: 31%;
+    display: flex;
+    flex-flow: column wrap;
+    flex-shrink: 5;
+    /* border: 2px solid red; */
+    width: 42vw;
+    height: 35vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    background-color: #0000007a;
+    border-radius: 7rem;
+}
+.heading{
+    color: white;
+    font-size: 5em;
+    padding-left: 0.8em;
+    font-family: serif;
+}
+h3{
+    color: white;
+    font-size: 2.5em;
+    margin-top: -1em;
+    text-align: center;
+}
+@media (min-width:1200) and (max-width:1340){
+    h3{
+        font-size: 1.5em;
+        color: tomato;
+    }
+}
+.btn-1{
+    font-size: 1.5em;
+    background-color: skyblue;
+    padding: 0.6em 0.6em;
+    border-radius: 2em;
+    font-family: auto;
+    font-weight: bold;
+    color: darkblue;
+    border: 2px solid blueviolet;
+    cursor: pointer;
+    margin-right: 2em;
+}
+.btn-1:hover{
+    background: none;
+    color: white;
+}
+.btn-2{
+    font-size: 1.5em;
+    background: none;
+    padding: 0.6em 0.6em;
+    border-radius: 2em;
+    font-family: auto;
+    font-weight: bold;
+    color: white;
+    border: 2px solid blueviolet;
+    cursor: pointer;
+    margin-right: 2em;
+}
+.btn-2:hover{
+    color: darkblue;
+    background-color: skyblue;
+}
+
+/* FOOTER */
+footer{
+    /* border: 2px solid red; */
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 16vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(rgba(159, 117, 238, 0.5),rgb(241, 143, 209));
+    
+}
+.foot{
+    font-size: 3rem;
+}
+footer input{
+    margin-left: -19rem;
+    width: 10vw;
+    padding: 0.8rem 0.4rem;
+    text-align: center;
+    background: black;
+    color: white;
+    border-radius: 1rem;
+}
+i{
+    font-size: 3rem;
+    padding-right: 2rem;
+    color: #4bd6d6;
+    font-family: fantasy;
+    font-style: normal;
+}
+.search{
+    font-size: 2rem;
+    padding: 0.8rem 1.5rem;
+    margin-left: -17rem;
+    background-color: darkseagreen;
+    color: maroon;
+    border-radius: 0.8rem;
+    border: 2px solid darkseagreen;
+    font-weight: bold;
+    cursor: pointer;
+}
+.search:hover{
+    background: none;
+    color: #4bd6d6;
+}
